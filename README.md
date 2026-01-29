@@ -11,11 +11,6 @@ Whether you're fueling your body with wholesome ingredients or indulging in a gu
 
 ---
 
-## 🎓 Project Exhibition
-This project was proudly showcased at *VIT Bhopal* as part of our academic exhibition. Our team of *five passionate members* worked collaboratively on every aspect of the platform to make it a success. 
-
-
----
 
 ## ⚡ Problem Statement
 The restaurant industry faces challenges in:
@@ -93,32 +88,14 @@ These gaps hinder restaurants from meeting *customer expectations, attracting ne
 
 ---
 
-## 🎥 Demo Videos
-1. *Overview of the Platform*:
-   [🌟 Watch Platform Overview](./assets/Video.mp4)
-
-2. *AI Chatbot in Action*:
-   [🤖 Watch Chatbot Demo](./assets/Video1.mp4)
-
----
-
-## 🌐 Live Website
-The platform is live! Visit us at [NutriVista](https://nutrivista-frontend-fpy9.onrender.com/) to explore our health-conscious dining options and experience the AI-powered meal customization! 
-
----
 
 ## 🤝 Contributing
 We welcome contributions from the community! Please fork the repository and submit a pull request with enhancements or fixes. 
 
 ---
 
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/KushalZanzari/nutrivista?tab=MIT-1-ov-file) file for more details. 
-
----
-
 ## 📧 Contact
-For questions, feedback, or suggestions, please reach out at [kushalzanzari@gmail.com](mailto:kushalzanzari@gmail.com). 
+For questions, feedback, or suggestions, please reach out at [chandravanshisneha102@gmail.com](mailto:chandravanshisneha102@gmail.com). 
 
 ---
 
