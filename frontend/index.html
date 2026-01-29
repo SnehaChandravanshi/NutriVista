@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriVista</title>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <style>
+    /* Custom Chatbot Toggle Button */
+    #chatbot-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 70px;
+      height: 70px;
+      background-color: tomato;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+      z-index: 1000;
+    }
+
+    #chatbot-toggle:hover {
+      transform: scale(1.1);
+    }
+
+    /* Hide default Dialogflow floating button */
+    df-messenger {
+      --df-messenger-button-titlebar-color: tomato;
+      --df-messenger-button-titlebar-font-color: white;
+      --df-messenger-chat-background-color: white;
+      --df-messenger-bot-message: white;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      display: none; /* Hide initially */
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Custom Chatbot Toggle Button -->
+  <button id="chatbot-toggle">NutriBot</button>
+
+ 
+  <!-- Dialogflow Chatbot -->
+  <df-messenger
+    intent="WELCOME"
+    chat-title="NutriAssistant"
+    agent-id="64b3b919-823d-49da-a7b4-4120cbe31591"
+    language-code="en">
+  </df-messenger>
+
+  <script>
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const dfMessenger = document.querySelector('df-messenger');
+
+    chatbotToggle.addEventListener('click', function () {
+      if (dfMessenger.style.display === "none") {
+        dfMessenger.style.display = "block"; // Show chatbot
+      } else {
+        dfMessenger.style.display = "none"; // Hide chatbot
+      }
+    });
+  </script>
+
+</body>
+
+</html>
